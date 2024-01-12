@@ -45,7 +45,6 @@ Ciao!
 
 <!-- tabs:end -->
 
-
 ## PlantUML Diagrams
 
 ```plantuml
@@ -63,4 +62,11 @@ start
 several **lines**;
 stop
 @enduml
+```
+
+## Code Blocks
+
+```javascript
+// This is a comment
+var x = 1;
 ```
