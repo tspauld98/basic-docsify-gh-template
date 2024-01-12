@@ -1,3 +1,4 @@
 - [Overview](/)
 - [Getting Started](/GettingStarted.md)
+- [FAQs](/FrequentlyAskedQuestions.md)
 - [Examples](/Examples.md)
