@@ -29,6 +29,23 @@ flowchart LR
     outside ---> top2
 ```
 
+<!-- tabs:start -->
+
+### **UML Use Case Diagram**
+
+Hello!
+
+### **UML Sequence Diagram**
+
+Bonjour!
+
+### **UML Component Diagram**
+
+Ciao!
+
+<!-- tabs:end -->
+
+
 ## PlantUML Diagrams
 
 ```plantuml
