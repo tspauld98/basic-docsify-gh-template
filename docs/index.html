@@ -13,6 +13,8 @@
 
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css"> -->
 
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+
   <!-- Custom Styles -->
   <style>
     :root {
@@ -20,11 +22,19 @@
       --sidebar-width: 20rem;
     }
   </style>
- 
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+
 </head>
 <body>
   <div id="app"></div>
   <script>
+    var num = 0;
+
     window.$docsify = {
       name: 'Project Documentation Template',
       repo: 'https://github.com/tspauld98/basic-docsify-gh-template',
@@ -44,19 +54,17 @@
         target: 'h2, h3, h4, h5, h6',
         ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
       },
+      mermaidConfig: {
+        querySelector: ".mermaid"
+      }
     }
   </script>
   <script src="vendor/docsify.js"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
-  
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
 
-  <!-- <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="https://unpkg.com/docsify-mermaid/dist/docsify-mermaid.js"></script>
+
   <script src="https://unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 </body>
 </html>
