@@ -37,6 +37,13 @@
       float: right;
       margin-top: 1.25%;
     }
+    .footer-text-author > a {
+      color: #fff;
+    }
+    .footer-text-author > a:hover {
+      color: #fff;
+      text-decoration-line: underline;
+    }
   </style>
 
   <script type="module">
@@ -48,6 +55,7 @@
 </head>
 <body>
   <div id="app"></div>
+  <footer id="mb-footer"></footer>
   <script>
     var num = 0;
 
@@ -72,6 +80,15 @@
       },
       mermaidConfig: {
         querySelector: ".mermaid"
+      },
+      autoFooter: {
+        name: "Battle Road Consulting",
+        url: "https://www.battleroadconsulting.com",
+        copyYear:    "2013",
+        policy:      false,
+        terms:       false,
+        cookies:     false,
+        customStyle: "body"
       }
     }
   </script>
@@ -83,6 +100,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs/dist/docsify-tabs.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-sidebarfooter/dist/docsify-sidebar.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid/dist/docsify-mermaid.js"></script>
