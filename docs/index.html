@@ -12,6 +12,8 @@
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="./_vendors/docsify-themeable-0.9.0/dist/css/theme-simple.css">
   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./_vendors/docsify-themeable-0.9.0/dist/css/theme-simple-dark.css">
 
+  <link rel="stylesheet" href="./_vendors/gitalk-1.8.0/dist/gitalk.css" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-accordion/src/style.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.css">
@@ -48,13 +50,6 @@
       text-decoration-line: underline;
     }
   </style>
-
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-
 </head>
 <body>
   <div id="app"></div>
@@ -99,6 +94,19 @@
 
   <script src="./_vendors/docsify-themeable-0.9.0/dist/js/docsify-themeable.js"></script>
 
+  <script src="./_vendors/gitalk-1.8.0/dist/gitalk.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Iv1.71397fcbdb45fa39',
+      clientSecret: 'bb5cd49bf6793328310d3083b83c92d4241d93cb',
+      repo: 'basic-docsify-gh-template',      // The repository of store comments,
+      owner: 'tspauld98',
+      admin: ['tspauld98']
+      //id: location.pathname,      // Ensure uniqueness and length less than 50
+      //distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+  </script>
+
   <!-- <script src="https://cdn.jsdelivr.net/npm/d3/dist/d3.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-accordion/src/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs/dist/docsify-tabs.js"></script>
@@ -108,6 +116,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid/dist/docsify-mermaid.js"></script>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify-plantuml/dist/docsify-plantuml.js"></script>
 </body>
