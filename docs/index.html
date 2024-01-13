@@ -63,7 +63,10 @@
       repo: 'https://github.com/tspauld98/basic-docsify-gh-template',
       logo: "_media/logo-gimp.png",
       loadNavbar: false,
-      search: 'auto',
+      search: {
+        depth: 3,
+        noData: 'No results!'
+      },
       loadSidebar: true,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
@@ -108,7 +111,8 @@
 
   <script src="./_vendors/docsify-accordion-0.0.3/src/index.js"></script>
   <script src="./_vendors/docsify-copy-code-3.0.0/dist/docsify-copy-code.js"></script>
-  <script src="./_vendors/docsify-themeable-0.9.0/dist/js/docsify-themeable.js"></script>
+  <script src="./_vendors/docsify-pagination-2.10.1/dist/docsify-pagination.js"></script>
+   <script src="./_vendors/docsify-themeable-0.9.0/dist/js/docsify-themeable.js"></script>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/d3/dist/d3.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs/dist/docsify-tabs.js"></script>
