@@ -111,21 +111,20 @@
 
   <script src="./_vendors/docsify-accordion-0.0.3/src/index.js"></script>
   <script src="./_vendors/docsify-copy-code-3.0.0/dist/docsify-copy-code.js"></script>
+
+  <script type="module">
+    import mermaid from "./_vendors/mermaid-10.6.1/dist/mermaid.esm.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="./_vendors/docsify-mermaid-2.0.1/dist/docsify-mermaid.js"></script>
+
   <script src="./_vendors/docsify-pagination-2.10.1/dist/docsify-pagination.js"></script>
   <script src="./_vendors/docsify-sidebarfooter-5.0.6/dist/docsify-sidebar.min.js"></script>
   <script src="./_vendors/docsify-tabs-1.6.0/dist/docsify-tabs.js"></script>
   <script src="./_vendors/docsify-themeable-0.9.0/dist/js/docsify-themeable.js"></script>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/d3/dist/d3.js"></script> -->
-
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid/dist/docsify-mermaid.js"></script>
-
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify-plantuml/dist/docsify-plantuml.js"></script>
 </body>
