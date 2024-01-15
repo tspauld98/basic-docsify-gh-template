@@ -110,7 +110,16 @@ Additionally, you should make any style changes in the `index.html` file to matc
 
 ## Deploying Your Documentation Site on Github Pages
 
-TBD
+Once you have a version of the `docs` folder in your repository on Github, you can configure the repository to deploy the documentation site on Github Pages.  To do this, follow these steps:
+
+1. Navigate to the repository on Github.
+2. Click the "Settings" tab on the repository page.
+3. Click on the "Pages" menu item in the left navigation bar.
+4. Select the `main` branch from the first dropdown list.
+5. Select the `/docs` folder from the second dropdown list.
+6. Click the "Save" button.
+
+At this point, it will take a few minutes for Github to deploy the documentation site.  Once the deployment process has completed, you can view the deployed site by navigating to `https://<your-github-username>.github.io/<your-repository-name>`.
 
 ## Dependencies and Plugins
 
