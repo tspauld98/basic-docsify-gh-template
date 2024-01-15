@@ -92,7 +92,21 @@ When you push the changes to the remote repository, Github will automatically de
 
 ## Customizing Your Documentation Site
 
-TBD
+If you want to add or disable features, you will need to modify the `index.html` file.  The `index.html` file is the entry point for the documentation site.  It is a single page application that uses the markdown files in the `docs` folder to render the documentation site dynamically.  All the plugins currently configured have been included locally in the `_vendors` folder.  If you add plugins, you will need to add them to the `_vendors` folder and update the `index.html` file to include them or configure them to load them from a CDN.  The `_media` folder contains images and other media that are used in the documentation site.  You can add your own media to this folder including custom styles, custom Javascript code, images, videos, and audio files.
+
+At a minimum, you should update the following items in the `index.html` file:
+
+- Update the `title` tag in the `head` section of the `index.html` file.
+- Update the `description` meta tag in the `head` section of the `index.html` file.
+- Update the `shortcut icon` link tag in the `head` section of the `index.html` file and the `favicon.ico` file in the `_media` folder.
+- Update the `name` attribute of the `docsify` script tag in the `body` section of the `index.html` file.
+- Update the `repo` attribute of the `docsify` script tag in the `body` section of the `index.html` file.
+- Update the `logo` attribute of the `docsify` script tag in the `body` section of the `index.html` file and the `logo*.png` file in the `_media` folder.
+- Update the `name` attribute in the `autoFooter` attribute of the `docsify` script tag in the `body` section of the `index.html` file.
+- Update the `url` attribute in the `autoFooter` attribute of the `docsify` script tag in the `body` section of the `index.html` file.
+- Update the `copyYear` attribute in the `autoFooter` attribute of the `docsify` script tag in the `body` section of the `index.html` file.
+
+Additionally, you should make any style changes in the `index.html` file to match the branding for your project/organization or to match your personal preferences.
 
 ## Deploying Your Documentation Site on Github Pages
 
