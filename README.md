@@ -118,10 +118,10 @@ TBD
 
 ## Future Enhancements
 
-- [ ] Add a LICENSE file
+- [x] ~~Add a LICENSE file~~
+- [x] ~~Add a robot.txt file~~
 - [ ] Add a CONTRIBUTING file
 - [ ] Add a CODE_OF_CONDUCT file
 - [ ] Add a SECURITY file
 - [ ] Add a CHANGELOG file
-- [ ] Add a robot.txt file
 - [ ] Set up a .github folder
