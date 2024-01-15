@@ -46,13 +46,23 @@ git checkout -b upstream-template-main --track upstream-template/main
 git checkout main
 ```
 
-5. Merge the contents of the remote repository into your existing repository using the following command:
+5. Merge the contents of the `docs` directory from the remote repository into your existing repository's `main` branch using the following command:
 
 ```bash
-git merge --allow-unrelated-histories upstream-template-main
+git checkout upstream-template-main -- docs
 ```
 
-## Developing Your Documentation Site
+6. Commit the changes to your repository using the following command:
+
+```bash
+git commit -am "Add docs folder from upstream-template"
+```
+
+**Note:** You make need to resolve any conflicts before you can commit the changes to the `main` branch.
+
+Once you have the contents from the template repository in your existing repository, you can start editing the markdown files in the `docs` folder. You can also customize the site by editing the `index.html` file to make the site your own.
+
+## Developing Your Documentation
 
 TBD
 
