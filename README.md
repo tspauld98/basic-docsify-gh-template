@@ -64,7 +64,31 @@ Once you have the contents from the template repository in your existing reposit
 
 ## Developing Your Documentation
 
-TBD
+### Prerequisites
+
+Make sure the following software is installed on your system:
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [Docsify CLI](https://docsify.js.org/#/quickstart?id=quick-start)
+
+### Development Process
+
+This process assumes you have the prerequisites installed on your system and that you have used one of the methods above to create your documentation repository.  It also assumes that you have cloned the repository to your local system.
+
+1. Make changes to the markdown files in the `docs` folder.  Mermaid and PlantUML are integrated with Docsify, so you can use them to create diagrams and illustrations in your documentation to support the text content.
+2. Commit the changes to the local repository.
+3. Run the following command to serve the documentation site locally:
+
+```bash
+docsify serve docs
+```
+
+4. Open a browser and navigate to `http://localhost:3000` to view the documentation site.
+5. Repeat steps 1-4 until you are satisfied with the changes to the documentation site.
+6. Push the changes to the remote repository on Github.
+
+When you push the changes to the remote repository, Github will automatically deploy the documentation site to Github Pages if you have configured Github Pages for your repository. You can view the deployed site by navigating to `https://<your-github-username>.github.io/<your-repository-name>` once the Github deployment process has completed.
 
 ## Customizing Your Documentation Site
 
