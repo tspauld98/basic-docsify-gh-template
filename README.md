@@ -10,7 +10,7 @@ The second method is to add this repository as a remote to your existing reposit
 
 ### Template Adoption Method
 
-Use this method if you are creating a standalone documentation repository.
+Use this method if you are creating a new standalone documentation repository.
 
 1. Click the "Use this template" button at the top of the repository page.
 2. Enter a name for your new repository.
@@ -58,7 +58,7 @@ git checkout upstream-template-main -- docs
 git commit -am "Add docs folder from upstream-template"
 ```
 
-**Note:** You make need to resolve any conflicts before you can commit the changes to the `main` branch.
+**Note:** You may need to resolve conflicts before you can commit the changes to the `main` branch.
 
 Once you have the contents from the template repository in your existing repository, you can start editing the markdown files in the `docs` folder. You can also customize the site by editing the `index.html` file to make the site your own.
 
