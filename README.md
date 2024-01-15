@@ -123,7 +123,29 @@ At this point, it will take a few minutes for Github to deploy the documentation
 
 ## Dependencies and Plugins
 
-TBD
+The following dependencies and plugins are currently configured and included in this repository:
+
+### Dependencies
+
+- [node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [docsify-cli v4.4.4](https://cli.docsifyjs.org/#/)
+- [docsify v4.13.1](https://docsify.js.org/#/)
+
+### Plugins
+
+- [docsify-accordion v0.0.3](https://www.npmjs.com/package/docsify-accordion)
+- [docsify-copy-code v3.0.0](https://www.npmjs.com/package/docsify-copy-code)
+- [docsify-mermaid v2.0.1](https://www.npmjs.com/package/docsify-mermaid)
+  - [mermaid v10.6.1](https://mermaid.js.org/intro/)
+- [docsify-mermaid-zoom v3.0.0](https://www.npmjs.com/package/docsify-mermaid-zoom)
+  - [d3 v7.8.5](https://d3js.org/)
+- [docsify-pagination v2.10.1](https://www.npmjs.com/package/docsify-pagination)
+- [docsify-plantuml v1.3.2](https://www.npmjs.com/package/docsify-plantuml)
+- [docsify-sidebarfooter v5.0.6](https://www.npmjs.com/package/@markbattistella/docsify-sidebarfooter)
+- [docsify-tabs v1.6.0](https://www.npmjs.com/package/docsify-tabs)
+- [docsify-themeable v0.9.0](https://www.npmjs.com/package/docsify-themeable)
+- [gitalk v1.8.0](https://www.npmjs.com/package/gitalk)
 
 ## Future Enhancements
 
